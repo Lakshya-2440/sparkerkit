@@ -1,0 +1,1 @@
+I did won a 10 day entrepreneurship hackathon in 10th grade in which we had to make a product and sell it. I made a product named "Sparkerkit" and this was the site, improved it a bit beofre pushing it here, just for nostalgic vibes.
