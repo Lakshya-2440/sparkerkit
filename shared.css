@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap');
 
 :root {
-  --bg: #050505;
-  --surface: #121212;
-  --surface-soft: #1a1a1a;
-  --text: #f4f4f4;
-  --muted: #b8b8b8;
-  --accent: #ffffff;
-  --line: #2a2a2a;
+  --bg: #000;
+  --surface: #000;
+  --surface-soft: #000;
+  --text: #fff;
+  --muted: #fff;
+  --accent: #fff;
+  --line: #fff;
 }
 
 * {
@@ -20,8 +20,7 @@ body {
   min-height: 100vh;
   font-family: 'Manrope', sans-serif;
   color: var(--text);
-  background: radial-gradient(circle at 12% 12%, rgba(255, 255, 255, 0.08) 0%, transparent 38%),
-    radial-gradient(circle at 88% 30%, rgba(255, 255, 255, 0.05) 0%, transparent 30%), var(--bg);
+  background: var(--bg);
 }
 
 .container,
@@ -40,8 +39,7 @@ nav {
   padding: 0.8rem 1.25rem;
   border: 1px solid var(--line);
   border-radius: 999px;
-  background: rgba(6, 6, 6, 0.74);
-  backdrop-filter: blur(8px);
+  background: #000;
 }
 
 nav .logo img {
