@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap');
+
+:root {
+  --bg: #050505;
+  --surface: #121212;
+  --surface-soft: #1a1a1a;
+  --text: #f4f4f4;
+  --muted: #b9b9b9;
+  --accent: #ffffff;
+  --line: #2b2b2b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: radial-gradient(circle at 12% 12%, rgba(255, 255, 255, 0.08) 0%, transparent 38%),
+    radial-gradient(circle at 88% 30%, rgba(255, 255, 255, 0.05) 0%, transparent 30%), var(--bg);
+  color: var(--text);
+  font-family: 'Manrope', sans-serif;
+  padding: 1.2rem 2.2rem 2.4rem;
+}
+
+.con {
+  max-width: 1200px;
+  margin: 0 auto 1.8rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 0.8rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(5, 5, 5, 0.75);
+  backdrop-filter: blur(8px);
+}
+
+nav .logo img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  display: block;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+nav ul li a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.6rem 1rem;
+  transition: all 0.2s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #000;
+  background: var(--accent);
+}
+
+nav .menu-btn i,
+input[type="checkbox"] {
+  display: none;
+}
+
+#product_card {
+  max-width: 1200px;
+  margin: 0 auto;
+  border: 1px solid var(--line);
+  border-radius: 26px;
+  background: linear-gradient(180deg, rgba(24, 24, 24, 0.95) 0%, rgba(13, 13, 13, 0.95) 100%);
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1.25rem;
+  padding: 1.4rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+#left {
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: var(--surface);
+}
+
+#left h1 {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+  font-size: clamp(1.3rem, 2.6vw, 2rem);
+  color: var(--accent);
+  text-align: center;
+  padding: 1rem;
+}
+
+#product_card img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+#right {
+  background: var(--surface-soft);
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  padding: 1.3rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+#right .sec-title {
+  display: inline-block;
+  color: var(--accent);
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+#buttondiv {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.4rem;
+}
+
+#button {
+  text-decoration: none;
+  color: #000;
+  background: var(--accent);
+  border-radius: 999px;
+  padding: 0.75rem 1.35rem;
+  font-weight: 700;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+#button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 22px rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 980px) {
+  body {
+    padding: 1rem;
+  }
+
+  nav {
+    border-radius: 20px;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  nav ul {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  #product_card {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+
+  #product_card img {
+    height: 250px;
+  }
+
+  #buttondiv {
+    justify-content: center;
+  }
+}

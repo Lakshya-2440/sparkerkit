@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sparker Kit | Contact Us</title>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="con">
+
+
+        <nav>
+          <a href="index.html"><div class="logo"><img src="logo.jpeg" alt="Sparker Kit logo" /></div></a> 
+          <input type="checkbox" id="click" />
+          <label for="click" class="menu-btn">
+            <i class="fas fa-bars"></i>
+          </label>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="buy.html">Buy Now</a></li>
+            <li><a class="active" href="contact.html">Contact Us</a></li>
+          </ul>
+        </nav>
+  
+  
+  
+        <div class="wrapper">
+        <div class="company-info">
+          <h1><span class="h">A</span>sk<span class="h">U</span>s</h1>
+          <p class="side">Having doubt? Have a suggestion? Please drop them here.</p>
+          <p class="side"><span class="contact-label">Contact Us</span></p>
+          <p class="side">gsanjana2441@gmail.com</p>
+          <p class="side">+91 8794702660</p>
+          <div class="social-icons">
+            <a href="https://www.instagram.com/sparkerkit/" target="_blank"
+            ><img src="insta_logo.png" alt="Instagram"
+          /></a>
+          <a href="https://twitter.com/sparker_street?t=kQib5I3dmkq5C0N-m5Eulw&s=08" target="_blank"
+            ><img src="twitter.png" alt="X"
+          /></a>
+          </div>
+        </div>
+        
+        <div class="contact">
+          <form id="contactForm">
+            <p>
+              <label>Name</label>
+              <input type="text" name="name" id="name" required>
+            </p>
+            <p>
+              <label>Email Address</label>
+              <input type="email" name="email" id="email" required>
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="text" name="phone" id="phone">
+            </p>
+            <p class="full">
+              <label>Message</label>
+              <textarea name="message" rows="5" id="message"></textarea>
+            </p>
+            <p class="full">
+              <button type="submit">Submit</button>
+            </p>
+          </form>
+          <div class="alert">Your message has been sent.</div>
+        </div>
+          </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
