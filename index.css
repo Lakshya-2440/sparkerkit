@@ -1,80 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Manrope:wght@400;500;600;700&display=swap');
-
-:root {
-  --bg: #040404;
-  --surface: #0f0f0f;
-  --surface-soft: #171717;
-  --text: #f6f6f6;
-  --muted: #afafaf;
-  --accent: #ffffff;
-  --line: #262626;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  min-height: 100vh;
-  font-family: 'Manrope', sans-serif;
-  color: var(--text);
-  background: radial-gradient(circle at 10% 10%, rgba(255, 255, 255, 0.08) 0%, transparent 35%),
-    radial-gradient(circle at 90% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 30%),
-    var(--bg);
-}
-
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-  min-height: 100vh;
-  padding: 1.2rem 2.2rem 2.5rem;
-}
-
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  background: rgba(4, 4, 4, 0.72);
-  border: 1px solid var(--line);
-  border-radius: 999px;
-  padding: 0.8rem 1.25rem;
-  backdrop-filter: blur(8px);
-}
-
-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 0.4rem;
-  list-style: none;
-}
-
-nav ul li a {
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1rem;
-  border-radius: 999px;
-  padding: 0.6rem 1rem;
-  transition: all 0.25s ease;
-}
-
-nav ul li a:hover,
-nav ul li a.active {
-  color: #000;
-  background: var(--accent);
-}
-
-nav .logo img {
-  height: 64px;
-  width: 64px;
-  border-radius: 50%;
-  border: 2px solid var(--accent);
-  display: block;
-}
-
 #slogan {
   margin: 5.5rem auto 2rem;
   text-align: center;
@@ -119,44 +42,16 @@ nav .logo img {
   right: 1.2rem;
   top: 50%;
   transform: translateY(-50%);
-  display: flex;
   flex-direction: column;
   gap: 0.8rem;
   z-index: 10;
 }
 
-.social-icons img {
-  width: 2.8rem;
-  height: 2.8rem;
-  border-radius: 12px;
-  border: 1px solid var(--line);
-  background: var(--surface);
-  padding: 0.45rem;
-  transition: transform 0.2s ease, border-color 0.2s ease;
-}
-
 .social-icons img:hover {
   transform: translateX(-6px);
-  border-color: var(--accent);
 }
 
 @media (max-width: 980px) {
-  .container {
-    padding: 1rem 1rem 2rem;
-  }
-
-  nav {
-    border-radius: 20px;
-    flex-direction: column;
-    gap: 0.9rem;
-  }
-
-  nav ul {
-    width: 100%;
-    justify-content: center;
-    flex-wrap: wrap;
-  }
-
   #slogan {
     margin-top: 2.5rem;
   }
